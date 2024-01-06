@@ -175,33 +175,21 @@ main{
 }
 
 .gallery{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 2em;
-    grid-template-rows: 250px;
-    margin: 2rem;
+   width: 87em;
+   margin: 1em auto;
+   columns: 4;
+   column-gap: 1em;
 }
 
-.gallery img{
-    height: 100%;
+.gallery .gallery-box{
     width: 100%;
-    object-fit: cover;
+    margin-bottom: 1em;
+    break-inside: avoid;
 }
 
-.gallery img:nth-child(1){
-    grid-column-start: span 2;
-}
-
-.gallery img:nth-child(2){
-    grid-row-start: span 2;
-}
-
-.gallery img:nth-child(5){
-    grid-row-start: span 2;
-}
-
-.gallery img:nth-child(8){
-    grid-column-start: span 2;
+.gallery .gallery-box img{
+    max-width: 100%;
+    border-radius: 15px;
 }
 
 /* --------------------------------- info-desafio --------------------------------- */
@@ -280,4 +268,23 @@ footer p{
 
 .social-media ul{
     padding-right: 1em;
+}
+
+@media (max-width: 1200px){
+    .gallery{
+        width: calc(100% - 40px);
+        columns: 3;
+    }
+}
+
+@media (max-width: 768px){
+    .gallery{
+        columns: 2;
+    }
+}
+
+@media (max-width: 480px){
+    .gallery{
+        columns: 2;
+    }
 }
