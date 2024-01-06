@@ -1,0 +1,107 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --first-color: #000000;
+    --second-color: white;
+    --third-color: #6c757d;
+    --fourth-color: #efefef;
+    --first-text-color: black;
+    --second-text-color: white;
+    
+}
+
+.bolder{
+    font-weight: 700;
+}
+
+.italic{
+    font-style: italic;
+}
+
+/* --------------------------------- call to action --------------------------------- */
+
+.call-to-action{
+    background-color: var(--first-color);
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+.call-to-action p {
+    color: var(--second-color);
+    margin: 0em .5em;
+}
+
+.call-to-action a{ 
+    color: var(--second-color);
+    font-weight: 700;
+}
+
+/* --------------------------------- header --------------------------------- */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 3em;
+    border-bottom: 1px solid var(--fourth-color);
+}
+
+h1 a{
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--first-color);
+}
+
+.links-container{
+    display: flex;
+    align-items: center;
+}
+
+.links-container a{
+    margin: 0em 3em;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--first-color);
+}
+.divider{
+    border-left: 1px solid var(--fourth-color);
+    height: 3em;
+}
+
+.links-container button{
+    color: var(--second-color);
+    background-color: var(--first-color);
+    border: none;
+    border-radius: 1em;
+    padding: 1em 1.5em;
+    font-weight: 700;
+    font-size: 1em;
+    margin-left: 3em;
+    cursor: pointer;
+}
+
+/* --------------------------------- faq --------------------------------- */
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 100ch;
+}
+
+main h1{
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+ 
+main p{
+    margin: 2rem 0;
+}
+
