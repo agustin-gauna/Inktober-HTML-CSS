@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -51,8 +52,10 @@ header{
     border-bottom: 1px solid var(--fourth-color);
 }
 
-h1{
+h1 a{
     font-weight: 700;
+    text-decoration: none;
+    color: var(--first-color);
 }
 
 .links-container{
@@ -148,7 +151,7 @@ main{
 
 .info-text h4{
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 2.5em;
     margin-bottom: .5em;
 }
 
@@ -235,7 +238,8 @@ main{
     font-weight: 500;
 }
 
-.gallery-section button{
+.gallery-section a{
+    text-decoration: none;
     display: block; /* Añadido para hacer que el botón sea visible */
     margin: 1em auto; /* Añadido para centrar el botón */
 
