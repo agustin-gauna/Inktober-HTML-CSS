@@ -1,0 +1,283 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --first-color: #000000;
+    --second-color: white;
+    --third-color: #6c757d;
+    --fourth-color: #efefef;
+    --first-text-color: black;
+    --second-text-color: white;
+    
+}
+
+.bolder{
+    font-weight: 700;
+}
+
+.italic{
+    font-style: italic;
+}
+
+/* --------------------------------- call to action --------------------------------- */
+
+.call-to-action{
+    background-color: var(--first-color);
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+.call-to-action p {
+    color: var(--second-color);
+    margin: 0em .5em;
+}
+
+.call-to-action a{ 
+    color: var(--second-color);
+    font-weight: 700;
+}
+
+/* --------------------------------- header --------------------------------- */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 3em;
+    border-bottom: 1px solid var(--fourth-color);
+}
+
+h1{
+    font-weight: 700;
+}
+
+.links-container{
+    display: flex;
+    align-items: center;
+}
+
+.links-container a{
+    margin: 0em 3em;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--first-color);
+}
+.divider{
+    border-left: 1px solid var(--fourth-color);
+    height: 3em;
+}
+
+.links-container button{
+    color: var(--second-color);
+    background-color: var(--first-color);
+    border: none;
+    border-radius: 1em;
+    padding: 1em 1.5em;
+    font-weight: 700;
+    font-size: 1em;
+    margin-left: 3em;
+    cursor: pointer;
+}
+
+/* --------------------------------- main --------------------------------- */
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 12rem 0rem;
+    height: 45vh;
+}
+
+.main-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 0rem;
+}
+
+.secondary-tittle{
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.main-tittle{
+    font-size: 5rem;
+}
+
+.italic-tittle{
+    font-weight: 400;
+    color: var(--third-color);
+}
+
+.main-buttons button{ 
+    color: var(--second-color);
+    background-color: var(--first-color);
+    border: none;
+    border-radius: 1em;
+    padding: 1em 1.5em;
+    font-weight: 700;
+    font-size: 1em;
+    margin-left: 3em;
+    cursor: pointer;
+    margin: 0rem 1rem;
+}
+
+.main-buttons a{ 
+    margin: 0rem 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--first-color);
+}
+
+/* --------------------------------- info inktober --------------------------------- */
+
+.info-inktober{
+    display: flex;
+    justify-content: center;
+}
+
+.info-text {
+    max-width: 55ch;
+    margin-right: 2em;
+}
+
+.info-text h4{
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-bottom: .5em;
+}
+
+.info-text p{ 
+    font-size: 1.3rem;
+    margin-bottom: 1em;
+}
+.astronauta1{ 
+    max-width: 35rem;
+    margin-left: 2em;
+}
+
+/* --------------------------------- gallery --------------------------------- */
+
+.gallery-tittle {
+    display: flex;
+    justify-content: center;
+}
+
+.gallery-tittle h2{
+    font-weight: 700;
+    font-size: 2.5em;
+    margin: 3em 0em;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2em;
+    grid-template-rows: 250px;
+    margin: 2rem;
+}
+
+.gallery img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.gallery img:nth-child(1){
+    grid-column-start: span 2;
+}
+
+.gallery img:nth-child(2){
+    grid-row-start: span 2;
+}
+
+.gallery img:nth-child(5){
+    grid-row-start: span 2;
+}
+
+.gallery img:nth-child(8){
+    grid-column-start: span 2;
+}
+
+/* --------------------------------- info-desafio --------------------------------- */
+.desafio-h2{
+    text-align: center;
+    font-size: 3em;
+    margin: 1.5em 0em;
+}
+
+.desafio-2023{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5em;
+}
+
+.info-desafio{
+    max-width:65ch;
+    margin-right: 1em;
+}
+
+.info-desafio h3{
+    font-size: 2em;
+    margin-bottom: .5em;
+}
+
+.info-desafio ul{
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+.info-desafio p{
+    margin-bottom: 1em;
+}
+
+.info-desafio h4{
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+.desafio-2023 img{
+    max-width: 35rem;
+    margin-left: 1em;
+}
+
+/* --------------------------------- prompts 2023 --------------------------------- */
+
+.prompts-2023{
+    display: flex;
+    justify-content: center;
+    padding: 3em;
+}
+
+/*--------------------------------- prompts 2023 --------------------------------- */
+
+footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--first-color);
+    padding: 7em;
+}
+
+footer p{
+    font-size: 2em;
+    text-align: center;
+    color: var(--second-text-color);
+    font-weight: 700;
+    margin-bottom: .5em;
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+}
+
+.social-media ul{
+    padding-right: 1em;
+}
