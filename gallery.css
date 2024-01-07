@@ -49,6 +49,12 @@ h1 a{
     font-weight: 700;
     text-decoration: none;
     color: var(--first-color);
+
+    transition: font-size 0.2s;
+}
+
+h1 a:hover{
+    font-size: 1.05em;
 }
 
 .links-container{
@@ -61,7 +67,14 @@ h1 a{
     font-weight: 700;
     text-decoration: none;
     color: var(--first-color);
+
+    transition: font-size 0.2s;
 }
+
+.links-container a:hover{
+    font-size: 1.05em;
+}
+
 .divider{
     border-left: 1px solid var(--fourth-color);
     height: 3em;
@@ -77,6 +90,12 @@ h1 a{
     font-size: 1em;
     margin-left: 3em;
     cursor: pointer;
+
+    transition: font-size 0.2s;
+}
+
+.links-container button:hover{
+    font-size: 1.05em;
 }
 
 /* --------------------------------- gallery --------------------------------- */
@@ -142,6 +161,39 @@ h1 a{
 .img-description h3{
     font-size: 0.8em;
     font-weight: 500;
+}
+
+/*--------------------------------- footer --------------------------------- */
+
+footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--first-color);
+    padding: 7em;
+    margin-top: 10em;
+}
+
+footer p{
+    font-size: 2em;
+    text-align: center;
+    color: var(--second-text-color);
+    font-weight: 700;
+    margin-bottom: .5em;
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+}
+
+.social-media ul{
+    padding-right: 1em;
+    transition: transform 0.3s ease;
+}
+
+.social-media ul:hover{
+    transform: scale(1.25)
 }
 
 /* --------------------------------- meadia querys --------------------------------- */

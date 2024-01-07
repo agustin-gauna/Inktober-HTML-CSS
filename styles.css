@@ -288,6 +288,12 @@ main{
     font-weight: 700;
     font-size: 1em;
     cursor: pointer;
+
+    transition: font-size 0.2s;
+}
+
+.gallery-section a:hover{
+    font-size: 1.05em;
 }
 
 /* --------------------------------- info-desafio --------------------------------- */
@@ -368,6 +374,11 @@ footer p{
 
 .social-media ul{
     padding-right: 1em;
+    transition: transform 0.3s ease;
+}
+
+.social-media ul:hover{
+    transform: scale(1.25)
 }
 
 @media (max-width: 1200px){
