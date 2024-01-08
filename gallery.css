@@ -40,6 +40,7 @@
 header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 2em 3em;
     border-bottom: 1px solid var(--fourth-color);
     margin-bottom: 5rem;
@@ -93,9 +94,6 @@ h1 a{
     margin-bottom: 1em;
 }
 
-.gallery-section{
-    position: relative;
-}
 
 .gallery{
    width: 87em;
@@ -103,8 +101,6 @@ h1 a{
    columns: 4;
    column-gap: 1em;
 
-  position: relative;
-  overflow: hidden;
 }
 
 
@@ -159,7 +155,7 @@ h1 a{
     }
 }
 
-@media (max-width: 480px){
+@media (max-width: 576px){
     .gallery{
         columns: 2;
     }
