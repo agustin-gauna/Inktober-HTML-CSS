@@ -66,6 +66,12 @@ h1 a{
     text-decoration: none;
     color: var(--first-color);
     font-weight: 700;
+
+    transition: font-size 0.2s;
+}
+
+h1 a:hover{
+    font-size: 1.1em;
 }
 
 .navbar{
@@ -85,6 +91,14 @@ h1 a{
 
 .navbar-list{
     align-items: center;
+}
+
+.navbar-list a{
+    transition: font-size 0.2s;
+}
+
+.navbar-list a:hover{
+    font-size: 1.1em;
 }
 
 .divider{
@@ -228,7 +242,7 @@ form button{
 }
 
 form button:hover{
-    transform: scale(1.10)
+    transform: scale(1.1)
 }
 
 /*--------------------------------- footer --------------------------------- */
