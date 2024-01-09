@@ -1,0 +1,99 @@
+/* --------------------------------- gallery --------------------------------- */
+
+.gallery-tittle {
+    display: flex;
+    justify-content: center;
+}
+
+.gallery-tittle h2{
+    font-weight: 700;
+    font-size: 2.5em;
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+
+.gallery-section{
+    position: relative;
+}
+
+.gallery{
+   width: 87em;
+   margin: 1em auto;
+   columns: 4;
+   column-gap: 1em;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%; /* ajusta la altura del gradiente según sea necesario */
+  background: linear-gradient(to top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 25%,rgba(255, 255, 255, 0.61) 50%, rgba(255, 255, 255, 0)100%);
+  pointer-events: none;
+}
+
+.gallery .gallery-box{
+    width: 100%;
+    margin-bottom: 1em;
+    break-inside: avoid;
+}
+
+.gallery .gallery-box img{
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.img-information{
+    display: flex;
+    align-items: center;
+}
+
+.profile-img{
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    margin-right: .5em;
+}
+
+.box-profile img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-description h3{
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+.gallery-section a{
+    text-decoration: none;
+    display: block; /* Añadido para hacer que el botón sea visible */
+    margin: 1em auto; /* Añadido para centrar el botón */
+
+    position: absolute;
+    bottom: 3%; /* 100% - 90% */
+    left: 50%; /* Otra opción: ajusta según sea necesario */
+    transform: translateX(-50%);
+
+    color: var(--second-color);
+    background-color: var(--first-color);
+    border: none;
+    border-radius: 1em;
+    padding: 1em 1.5em;
+    font-weight: 700;
+    font-size: 1em;
+    cursor: pointer;
+
+    transition: font-size 0.2s;
+}
+
+.gallery-section a:hover{
+    font-size: 1.05em;
+}
