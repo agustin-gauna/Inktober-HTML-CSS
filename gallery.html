@@ -10,37 +10,57 @@
 
     <link rel="stylesheet" href="gallery.css">
 
+    <link rel="icon" href="icons/logo.svg" type="image/svg+xml">
+
     <title>Inktober | Galeria</title>
 
 </head>
 <body>
 
-    <div class="call-to-action">
-     
-        <p>Conoce las tematicas de cada dia!</p> 
-        <a href="#"> Haz click aqui!</a>
-
-    </div>
-
-    <header>
+    <nav class="nav-container">
         
-            
-        <h1><a href="index.html">Inktober.</a></h1>
-
-        <div class="links-container">
-
-            <a href="index.html#id-info-inktober">¿Qué es Inktober?</a>
-            <a href="index.html#id-desafio-inktober">Desafío 2023</a>
-            <a href="faq.html">FAQ</a>
-            <a href="contact.html">Contacto</a>
-
-            <div class="divider"></div>
-
-            <button>Iniciar Sesión</button>
-
+        <div class="call-to-action">
+     
+            <p>Conocé las tematicas de cada día!</p> 
+            <a href="index.html#prompts-2023"> Haz click aquí!</a>
+    
         </div>
+    
+        <header class="header">
             
-    </header>
+            <h1 class="logo"><a href="index.html">Inktober.</a></h1>
+    
+            <nav class="navbar">
+                 
+                <input type="checkbox" id="toggle-menu">
+    
+                <label for="toggle-menu" class="bars-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+    
+                <ul class="navbar-list">
+                    <li>
+    
+                        <a href="index.html#id-info-inktober" class="navbar-link">¿Qué es Inktober?</a>
+    
+                        <a href="index.html#id-desafio-inktober" class="navbar-link">Desafío 2023</a>
+    
+                        <a href="faq.html" class="navbar-link">FAQ</a>
+    
+                        <a href="contact.html" class="navbar-link">Contacto</a>
+                    </li>
+    
+                    <div class="divider"></div>
+    
+                    <a href="#" class="login-link">Iniciar Sesión</a>
+    
+                    
+                </ul>
+            </nav>
+        </header>
+    </nav>
     
     <section class="gallery-section">
 

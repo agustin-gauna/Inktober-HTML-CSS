@@ -411,6 +411,11 @@ main{
 .prompts-2023{
     display: flex;
     justify-content: center;
+    background-color: #000000;
+}
+
+.prompts-2023 img{
+    width: 700px;
 }
 
 
