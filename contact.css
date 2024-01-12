@@ -225,6 +225,8 @@ form textarea{
     border-radius: .5em;
     resize: vertical;
     margin-bottom: 1.5em;
+    min-height: 250px;
+    padding: .5em;
 }
 
 form button{
@@ -355,6 +357,11 @@ footer p{
         gap: .2em;
     }
 
+    form textarea{
+        min-height: 250px;
+        padding: .5em;
+    }
+
     /*--------------------------------- footer celular --------------------------------- */
 
     footer{
@@ -406,6 +413,13 @@ footer p{
 
     #toggle-menu:checked ~ .navbar-list{
         transform: translateX(0);
+    }
+
+    /*--------------------------------- form tablet --------------------------------- */
+
+    form textarea{
+        min-height: 250px;
+        padding: .5em;
     }
 
     /*--------------------------------- footer tablet --------------------------------- */
