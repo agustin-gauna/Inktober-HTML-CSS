@@ -51,31 +51,29 @@ body::before {
     
 }
 
-.close-icon{
-    position: absolute;
-    top: 20px;
-    right: 20px;
-}
 
-.close-icon img{
-    width: 40px;
-}
-
-.close-icon a{
-    width: 646px;
-}
 
 main{
     max-height: 1000px;
-    position: relative;
     display: flex;
-    justify-content: center;
 }
 
 .img-container img{
     object-fit: contain;
     max-width: 100%;
     max-height: 100%;
+}
+
+.close-icon {
+    width: 85%;
+    display: flex;
+    justify-content: flex-end;
+
+    cursor: pointer;
+}
+
+.close-icon img{
+    width: 40px;
 }
 
 .form-container{
@@ -114,12 +112,9 @@ main{
     cursor: pointer;
 }
 
-.buttons-container button figure{
-    display: inline-block;
-    vertical-align: middle;
-
+.buttons-container button img{
+    align-items: center;
 }
-
 
 
 
@@ -201,12 +196,6 @@ main{
 
 @media (max-width:576px){
 
-    .close-icon{
-        position: absolute;
-        top: -64px;
-        right: 20px;
-    }
-
     body {
         background: white; /* Establecer el fondo a blanco en dispositivos móviles */
     }
@@ -225,7 +214,7 @@ main{
     }
     
     .buttons-container{
-        width: 80%;
+        width: 85%;
     }
 
     .buttons-container button{
@@ -241,15 +230,15 @@ main{
     }
     
     .form button{
-        width: 80%;
+        width: 85%;
     }
     
     .divider{
-        width: 80%;
+        width: 85%;
     }
     
     .form{
-        width: 80%;
+        width: 85%;
     }
     
     .already-member{
@@ -265,11 +254,7 @@ main{
 
 @media (max-width:820px){
     
-    .close-icon{
-        position: absolute;
-        top: 10px;
-        right: 20px;
-    }
+
 
     .img-container{
         display: none;
