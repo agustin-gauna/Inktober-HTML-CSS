@@ -129,7 +129,7 @@ h1 a:hover{
     color: var(--second-color);
     background-color: var(--first-color);
     border: none;
-    border-radius: 1em;
+    border-radius: .3em;
     padding: .75em 1.5em;
     font-weight: 700;
     font-size: 1em;
@@ -206,7 +206,7 @@ main{
     color: var(--second-color);
     background-color: var(--first-color);
     border: none;
-    border-radius: 1em;
+    border-radius: .3em;
     padding: 1em 1.5em;
     font-weight: 700;
     font-size: 1em;
