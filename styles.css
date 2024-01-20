@@ -467,7 +467,7 @@ footer p{
 
 @media (max-width:576px){
     /* -------------------------- call to action celular ------------------------- */
-
+    
     .call-to-action p{
         font-size: .65em;
     }
@@ -506,7 +506,9 @@ footer p{
         gap: 24px;
         text-align: center;
         justify-content: center;
-        
+        z-index: -1;
+
+
         transform: translateX(200%);
         transition: all .4s ease ;
     }
@@ -518,6 +520,7 @@ footer p{
     #toggle-menu:checked ~ .navbar-list{
         transform: translateX(0);
     }
+
 
     /* -------------------------- main celular ------------------------- */
 
@@ -653,6 +656,7 @@ footer p{
         gap: 24px;
         text-align: center;
         justify-content: center;
+        z-index: -1;
         
         transform: translateX(200%);
         transition: all .4s ease ;

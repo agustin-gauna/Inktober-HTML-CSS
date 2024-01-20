@@ -270,6 +270,7 @@ footer p{
         gap: 24px;
         text-align: center;
         justify-content: center;
+        z-index: -1;
         
         transform: translateX(200%);
         transition: all .4s ease ;
@@ -328,6 +329,7 @@ footer p{
         gap: 24px;
         text-align: center;
         justify-content: center;
+        z-index: -1;
         
         transform: translateX(200%);
         transition: all .4s ease ;
